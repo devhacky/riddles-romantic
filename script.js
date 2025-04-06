@@ -106,20 +106,21 @@ function showRiddle(index) {
       const input = document.createElement('input');
       input.id = 'answer';
       input.placeholder = 'Your answer...';
-
+    
       const button = document.createElement('button');
       button.innerText = 'Submit';
       button.onclick = () => checkAnswer(riddle.answer);
-
+    
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          checkAnswer(riddle.answer);
+        }
+      });
+    
       container.appendChild(input);
       container.appendChild(button);
     }
-
-    if (riddle.final) {
-      setTimeout(() => {
-        window.location.href = 'love-letter.html';
-      }, 4000);
-    }
+    
   });
 }
 
