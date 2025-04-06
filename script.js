@@ -29,7 +29,7 @@ We caught it on camera, that magical space,
 Now tell me, my love—what was that place?`,
     video: 'media/riddle3-video.mp4',
     input: true,
-    answer: 'monkey'
+    answer:  'trampoline park'
   },
   {
     text: `Soft as a whisper, sweet as a tune,
